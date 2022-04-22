@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+/*
+========================
+Font Importadas 
+========================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*
+=========================
+Configuração de Varivaeis
+=========================
+*/
+:root{
+    --FontSizeDoMenu: 120%;
+    --FontFamilyDoMenu:  'Open Sans', sans-serif;
+    --CorDoLinkMenu:  #262626;
+    --CorDeFundoDoMenu: #F2F2F2;
+    --LinearGradientMenu:  #0D0D0D, #404040;
+    --CorDeFundoDoMain: #F2F2F2;
+    --CorDeFontDeApresentação: #F27405;
+    --LinearGradientMenu: linear-gradient(to right, #0D0D0D, #590202);
+    --ImageDoMenu: url("../images/headerdomenu.jpg");
+    --colorCinzaEscuro: #0D0D0D;
+    --MinhaImage:  url("../images/LucasDeLima.jpg");
+    --CorDoTitulo:  #BF2424;
+    --CorVemelharForte: #BF2424;
+}
+.MenuDeNavegação{
+    position: relative;
+    width: 100vw;
+    padding-top: 20px;
+    height: 60px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+    background-color: var(--CorDeFundoDoMenu);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Menu{
+    list-style-type: none;
+    width: 100vw;
+    padding-top: 20px;
+    list-style-position: inside;
+    text-align: end;
+    height: 60px;
+    position: fixed;
+}
+.Menu > li{
+    display: inline-block;
+    padding-right: 80px;
+}
+.Menu > li a{
+    text-decoration: none;
+    color: var(--CorDoLinkMenu);
+    font-size: var(--FontSizeDoMenu);
+    font-family: var(--FontFamilyDoMenu);
+}
+#Logo{
+    position: absolute;
+    display: inline-block;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+/*
+==================================
+Content For Main content
+==================================
+*/
+.MainPageLayout{
+    background-color: var(--CorDeFundoDoMain);
+    width: 100vw;
+    position: relative;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:  
+    "SobreMim QuemSou"
+    ;
+}
+/*
+
+*/
+#Apresentação{
+    margin-top: 20px;
+    top: 4vh;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    grid-area: SobreMin;
+    border-radius: 20px;
+    padding-top: 30px;
+    color: var(--CorDeFontDeApresentação);
+}
+#Apresentação h1{
+    text-align: center;
+    color: var(--CorDoTitulo);
+    font-size: 80px;
+    font-weight: bolder;
+    padding-bottom: 40px;
+}
+#Apresentação h1:first-letter{
+    border-top: 4px solid #BF2424;
+    color: #0D0D0D;
+}
+#Apresentação article h2{
+    margin-left: 40px;
+    text-indent: 1em;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    color: var(--CorDoTitulo);
+}
+#Apresentação article h2:first-letter{
+    color: var(--colorCinzaEscuro);
+}
+#Apresentação button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: var(--CorVemelharForte);
+}
+#Apresentação button a{
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: 20px;
+}
+#SideNav{
+    margin-left: 30px;
+    border: 2px solid #BF2424;
+    width: 500px;
+    border-radius: 20px;
+    height: 80px;
+}
+#SideNav ul li{
+    padding-left: 20px;
+    display: inline;
+}
+/*
+
+*/
+#MinhaImage{
+    margin-top: 30px;
+    top: 4vh;
+    left: 10vw;
+    position: absolute;
+    width: 350px;
+    height: 550px;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 400px; 
+    max-height: 600px;
+    grid-area: QuemSou;
+    border-radius: 20px;
+    border: 6px solid #BF3604;
+    padding-top: 30px;
+    transform: translate3d(30deg);
+}
+#MinhaImage img{
+    position: absolute;
+    transform: translate(-40px, -80px);
+    width: 350px;
+    border-radius: 20px;
+    height: 600px;
+}
