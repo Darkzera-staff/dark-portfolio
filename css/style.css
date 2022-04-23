@@ -28,25 +28,27 @@ Configuração de Varivaeis
     --MinhaImage:  url("../images/LucasDeLima.jpg");
     --CorDoTitulo:  #BF2424;
     --CorVemelharForte: #BF2424;
+    --FontSizeLogProjeto: 30px;
+    --CorVermelhaFoscas: #590202;
 }
 .MenuDeNavegação{
     position: relative;
+    border-bottom: 0.5px solid black;
     width: 100vw;
     padding-top: 20px;
     height: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     font-weight: bolder;
     background-color: var(--CorDeFundoDoMenu);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .Menu{
+    position: absolute;
     list-style-type: none;
     width: 100vw;
     padding-top: 20px;
-    list-style-position: inside;
     text-align: end;
     height: 60px;
-    position: fixed;
 }
 .Menu > li{
     display: inline-block;
@@ -57,6 +59,9 @@ Configuração de Varivaeis
     color: var(--CorDoLinkMenu);
     font-size: var(--FontSizeDoMenu);
     font-family: var(--FontFamilyDoMenu);
+}
+.Menu > li a:hover{
+    color: var(--CorVemelharForte);
 }
 #Logo{
     position: absolute;
@@ -74,7 +79,7 @@ Content For Main content
     background-color: var(--CorDeFundoDoMain);
     width: 100vw;
     position: relative;
-    height: 800px;
+    height: 760px;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-areas:  
@@ -169,4 +174,112 @@ Content For Main content
     width: 350px;
     border-radius: 20px;
     height: 600px;
+}
+/*
+===============================
+/Habilidades e Software skills
+===============================
+*/
+#Habilidades{
+    width: 100vw;
+    height: 600px;
+    background-color: var(--CorVermelhaFoscas);
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 0px 0px 0px;
+    align-items: center;
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.727);
+}
+#Habilidades header{
+    position: absolute;
+    margin-top: -500px;
+    color: var(--CorDeFundoDoMenu);
+    font-size: var(--FontSizeLogProjeto);
+    align-items: flex-start;
+}
+#Habilidades header h2{
+    font-family: var(--FontFamilyDoMenu);
+    margin-left: 570px;
+    text-align: center;
+    border-radius: 20px;
+    border-bottom: 4px solid #F2F2F2;
+}
+.Habilidade{
+   border: inset 3px solid rgba(0, 0, 0, 0.727);
+   border-radius: 10px;
+   margin-left: 40px;
+   background-color: aliceblue;
+   width: 400px;
+   height: 350px;
+   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.727);
+}
+.Habilidade img{
+    margin-top: 45px;
+    margin-left: 175px;
+    margin-bottom: 10px;
+}
+.Habilidade h2{
+    margin-left: 100px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 40px;
+    border-bottom: 2px solid #BF3604;
+}
+.Habilidade p{
+    width: 300px;
+    padding-top: 20px;
+    margin-left: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 16px;
+}
+.Habilidade:hover{
+    background-color: var(--CorVemelharForte);
+    transition: 0.2s;
+    color: #F2F2F2;
+}
+.Habilidade:hover h2{
+    border-bottom: 4px solid white;
+}
+/*
+=============================
+/Guia de Projetos
+=============================
+*/
+#Projetos{
+    width: 100vw;
+    height: 1000px;
+    background-color: var(--CorDeFundoDoMenu);
+    display: flex;
+    flex-direction: row;
+}
+#Projetos header{
+   margin-top: 70px;
+   left: 540px;
+   position: absolute;
+   height: 300px;
+   width: 300px;
+   transform: rotateZ(45deg);
+   border: 4px solid var(--CorVemelharForte);
+}
+#Projetos header div h2{
+    width: 200px;
+    height: 100px;
+    margin-left: 60px;
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--FontFamilyDoMenu);
+    transform: rotate(-45deg);
+    color: var(--CorVemelharForte);
+    font-size: var(--FontSizeLogProjeto);
+}
+.Projeto{
+    margin-top: 460px;    
+    margin-left: 45px;
+    width: 400px;
+    height: 350px;
+    background-color: var(--colorCinzaEscuro);
 }
