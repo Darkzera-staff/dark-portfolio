@@ -280,6 +280,37 @@ Content For Main content
     margin-top: 460px;    
     margin-left: 45px;
     width: 400px;
-    height: 350px;
+    height: 450px;
+    border-radius: 10px;
     background-color: var(--colorCinzaEscuro);
+    border: 1px solid #590202;
+}
+.infor{
+    position: absolute;
+    margin-top: 250px;    
+    background-color: #F2F2F2;
+    height: 200px;
+    width: 400px;
+    border-radius: 0px 0px 10px 10px;
+}
+.Projeto div div{
+    margin-top: -30px;
+    margin-left: 150px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #F2F2F2;
+}
+.FooterMainPgae{
+    width: 100vw;
+    height: 160px;
+    background-color: var(--CorVermelhaFoscas);
+}
+.FooterMainPgae p{
+    color: #F2F2F2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 500px;    
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
