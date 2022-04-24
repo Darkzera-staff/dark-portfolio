@@ -314,3 +314,50 @@ Content For Main content
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*
+==============================
+/Contanto                    /
+==============================
+*/
+.Contanto{
+    width: 100vw;
+    height: 575px;
+}
+.Contanto section{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 360px;
+    width: 600px;
+    height: 400px;
+}
+.Contanto section h1{
+    margin-left: 170px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 280px;
+    border-radius: 50px;
+    border-bottom: 4px solid var(--CorVermelhaFoscas);
+}
+.Contanto section p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 120px;
+    font-size: 20px;
+    width: 380px;
+    height: 300px;
+}
+.FooterAll{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--colorCinzaEscuro);
+}
+.FooterAll p{
+    color: #F2F2F2;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 500px;    
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
