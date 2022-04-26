@@ -361,3 +361,339 @@ Content For Main content
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@media screen and (max-width: 900px){
+    .MenuDeNavegação{
+        position: relative;
+        border-bottom: 0.5px solid black;
+        width: 100vw;
+        padding-top: 20px;
+        height: 60px;
+        padding-bottom: 10px;
+        font-weight: bolder;
+        background-color: var(--CorDeFundoDoMenu);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .Menu{
+        position: absolute;
+        list-style-type: none;
+        width: 100vw;
+        padding-top: 20px;
+        text-align: end;
+        height: 60px;
+    }
+    .Menu > li{
+        display: inline-block;
+        padding-right: 80px;
+    }
+    .Menu > li a{
+        text-decoration: none;
+        color: var(--CorDoLinkMenu);
+        font-size: var(--FontSizeDoMenu);
+        font-family: var(--FontFamilyDoMenu);
+    }
+    .Menu > li a:hover{
+        color: var(--CorVemelharForte);
+    }
+    #Logo{
+        position: absolute;
+        display: inline-block;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    /*
+    ==================================
+    Content For Main content
+    ==================================
+    */
+    .MainPageLayout{
+        background-color: var(--CorDeFundoDoMain);
+        width: 100vw;
+        position: relative;
+        height: 760px;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas:  
+        "SobreMim QuemSou"
+        ;
+    }
+    /*
+    
+    */
+    #Apresentação{
+        margin-top: 20px;
+        top: 2vh;
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        grid-area: SobreMin;
+        border-radius: 20px;
+        padding-top: 30px;
+        color: var(--CorDeFontDeApresentação);
+    }
+    #Apresentação h1{
+        text-align: center;
+        color: var(--CorDoTitulo);
+        font-size: 20px;
+        font-weight: bolder;
+        padding-bottom: 20px;
+    }
+    #Apresentação h1:first-letter{
+        border-top: 4px solid #BF2424;
+        color: #0D0D0D;
+    }
+    #Apresentação article h2{
+        margin-left: 20px;
+        text-indent: 1em;
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 1px;
+        color: var(--CorDoTitulo);
+    }
+    #Apresentação article h2:first-letter{
+        color: var(--colorCinzaEscuro);
+    }
+    #Apresentação button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        border-radius: 20px;
+        width: 100px;
+        height: 50px;
+        border: none;
+        background-color: var(--CorVemelharForte);
+    }
+    #Apresentação button a{
+        text-decoration: none;
+        color: #0D0D0D;
+        font-size: 20px;
+    }
+    #SideNav{
+        margin-left: 30px;
+        border: 2px solid #BF2424;
+        width: 500px;
+        border-radius: 20px;
+        height: 80px;
+    }
+    #SideNav ul li{
+        padding-left: 20px;
+        display: inline;
+    }
+    /*
+    
+    */
+    #MinhaImage{
+        margin-top: 50px;
+        top: 2vh;
+        left: 5vw;
+        position: absolute;
+        width: 250px;
+        height: 450px;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 400px; 
+        max-height: 600px;
+        grid-area: QuemSou;
+        border-radius: 20px;
+        border: 6px solid #BF3604;
+        padding-top: 30px;
+        transform: translate3d(15deg);
+    }
+    #MinhaImage img{
+        position: absolute;
+        transform: translate(-20px, -40px);
+        width: 250px;
+        border-radius: 20px;
+        height: 500px;
+    }
+    /*
+    ===============================
+    /Habilidades e Software skills
+    ===============================
+    */
+    #Habilidades{
+        width: 100vw;
+        height: 1200px;
+        background-color: var(--CorVermelhaFoscas);
+        display: flex;
+        flex-direction:column;
+        border-radius: 0px 0px 0px 0px;
+        align-items: center;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.727);
+        padding-top: 100px;
+    }
+    #Habilidades header{
+        position: absolute;
+        margin-top: -60px;
+        color: var(--CorDeFundoDoMenu);
+        font-size: var(--FontSizeLogProjeto);
+        align-items: flex-start;
+    }
+    #Habilidades header h2{
+        font-family: var(--FontFamilyDoMenu);
+        margin-left: 5px;
+        text-align: center;
+        border-radius: 20px;
+        border-bottom: 4px solid #F2F2F2;
+    }
+    .Habilidade{
+       margin-top: 20px;
+       margin-bottom: 10px;
+       border: inset 3px solid rgba(0, 0, 0, 0.727);
+       border-radius: 10px;
+       margin-left: 5px;
+       background-color: aliceblue;
+       width: 350px;
+       height: 350px;
+       box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.727);
+    }
+    .Habilidade img{
+        margin-top: 45px;
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
+    .Habilidade h2{
+        margin-left: 80px;
+        width: 200px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        border-radius: 40px;
+        border-bottom: 2px solid #BF3604;
+    }
+    .Habilidade p{
+        width: 300px;
+        padding-top: 20px;
+        margin-left: 28px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 16px;
+    }
+    .Habilidade:hover{
+        background-color: var(--CorVemelharForte);
+        transition: 0.2s;
+        color: #F2F2F2;
+    }
+    .Habilidade:hover h2{
+        border-bottom: 4px solid white;
+    }
+    /*
+    =============================
+    /Guia de Projetos
+    =============================
+    */
+    #Projetos{
+        width: 100vw;
+        height: 1500px;
+        background-color: var(--CorDeFundoDoMenu);
+        display: flex;
+        flex-direction: column;
+    }
+    #Projetos header{
+       margin-top: 70px;
+       left: 340px;
+       position: absolute;
+       height: 150px;
+       width: 150px;
+       transform: rotateZ(45deg);
+       border: 4px solid var(--CorVemelharForte);
+    }
+    #Projetos header div h2{
+        width: 100px;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 40px;
+        padding-top: 20px;
+        text-align: center;
+        font-family: var(--FontFamilyDoMenu);
+        transform: rotate(-45deg);
+        color: var(--CorVemelharForte);
+        font-size: var(--FontSizeLogProjeto);
+    }
+    .Projeto{
+        margin-top: 340px;    
+        margin-left: 45px;
+        width: 400px;
+        height: 350px;
+        border-radius: 10px;
+        background-color: var(--colorCinzaEscuro);
+        border: 1px solid #590202;
+    }
+    .infor{
+        position: absolute;
+        margin-top: 75px;    
+        background-color: #F2F2F2;
+        height: 160px;
+        width: 400px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .Projeto div div{
+        margin-top: -30px;
+        margin-left: 150px;
+        border-radius: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: #F2F2F2;
+    }
+    .FooterMainPgae{
+        width: 100vw;
+        height: 160px;
+        background-color: var(--CorVermelhaFoscas);
+    }
+    .FooterMainPgae p{
+        color: #F2F2F2;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 200px;    
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /*
+    ==============================
+    /Contanto                    /
+    ==============================
+    */
+    .Contanto{
+        width: 100vw;
+        height: 575px;
+    }
+    .Contanto section{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 360px;
+        width: 600px;
+        height: 400px;
+    }
+    .Contanto section h1{
+        margin-left: 170px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        width: 280px;
+        border-radius: 50px;
+        border-bottom: 4px solid var(--CorVermelhaFoscas);
+    }
+    .Contanto section p{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 120px;
+        font-size: 20px;
+        width: 380px;
+        height: 300px;
+    }
+    .FooterAll{
+        width: 100vw;
+        height: 100px;
+        background-color: var(--colorCinzaEscuro);
+    }
+    .FooterAll p{
+        color: #F2F2F2;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 500px;    
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+}
